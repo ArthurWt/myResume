@@ -4,25 +4,40 @@
     document.documentElement.style.fontSize = winW / desW * 100 + "px";
 }(320);
 //->音频的自动播放
-+function () {
-    var audioBox = document.querySelector(".audio"),
-        myAudio = audioBox.getElementsByTagName("audio")[0];
-    window.setTimeout(function () {
-        myAudio.play();
-        myAudio.addEventListener("canplay", function () {
-            audioBox.style.display = "block";
-            audioBox.className += " audioMove";
-        }, false);
-    }, 1000);
-    audioBox.addEventListener("click", function () {
-        if (myAudio.paused) {
-            myAudio.play();
-            audioBox.className = "audio audioMove";
-            return;
+//+function () {
+//    var audioBox = document.querySelector(".audio"),
+//        myAudio = audioBox.getElementsByTagName("audio")[0];
+//    window.setTimeout(function () {
+//        myAudio.play();
+//        myAudio.addEventListener("canplay", function () {
+//            audioBox.style.display = "block";
+//            audioBox.className += " audioMove";
+//        }, false);
+//    }, 1000);
+//    audioBox.addEventListener("click", function () {
+//        if (myAudio.paused) {
+//            myAudio.play();
+//            audioBox.className = "audio audioMove";
+//            return;
+//        }
+//        myAudio.pause();
+//        audioBox.className = "audio";
+//    }, false);
+//}();
+~function () {
+    var audioBtn=document.querySelector("#audio-btn");
+    var media=document.querySelector("#media");
+
+    audioBtn.onclick = function(){
+        if (media.paused) {
+            media.play();
+            audioBtn.id="audio-btn";
         }
-        myAudio.pause();
-        audioBox.className = "audio";
-    }, false);
+        else {
+            media.pause();
+            audioBtn.id="";
+        }
+    };
 }();
 //->给滑屏区域进行初始化设置
 +function () {

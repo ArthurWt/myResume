@@ -64,49 +64,93 @@ img {
 /*-----------------------*/
 
 /*--AUDIO--*/
-.audio {
-    display: none;
+/*.audio {*/
+    /*display: none;*/
+    /*position: absolute;*/
+    /*top: .2rem;*/
+    /*right: .2rem;*/
+    /*z-index: 100;*/
+    /*width: .3rem;*/
+    /*height: .3rem;*/
+    /*background: url("image/normalmusic.svg") no-repeat;*/
+    /*background-size: 100% 100%;*/
+/*}*/
+
+/*.audio .audioMp3 {*/
+    /*display: none;*/
+/*}*/
+
+/*.audioMove {*/
+    /*-webkit-animation: audioMove 1s linear infinite both;*/
+    /*animation: audioMove 1s linear infinite both;*/
+/*}*/
+
+/*@-webkit-keyframes audioMove {*/
+    /*from {*/
+        /*-webkit-transform: rotate(0deg);*/
+        /*transform: rotate(0deg);*/
+    /*}*/
+    /*to {*/
+        /*-webkit-transform: rotate(360deg);*/
+        /*transform: rotate(360deg);*/
+    /*}*/
+/*}*/
+
+/*@keyframes audioMove {*/
+    /*from {*/
+        /*-webkit-transform: rotate(0deg);*/
+        /*transform: rotate(0deg);*/
+    /*}*/
+    /*to {*/
+        /*-webkit-transform: rotate(360deg);*/
+        /*transform: rotate(360deg);*/
+    /*}*/
+/*}*/
+
+.audio-btn{
     position: absolute;
     top: .2rem;
     right: .2rem;
     z-index: 100;
     width: .3rem;
     height: .3rem;
-    background: url("image/normalmusic.svg") no-repeat;
-    background-size: 100% 100%;
+    background: url("image/normalmusic.svg") no-repeat center center;
+    background-size: contain;
+    display: block;
+}
+#audio-btn{
+    -webkit-animation: change 1.5s linear infinite;
+    animation: change 1.5s linear infinite;
 }
 
-.audio .audioMp3 {
-    display: none;
-}
-
-.audioMove {
-    -webkit-animation: audioMove 1s linear infinite both;
-    animation: audioMove 1s linear infinite both;
-}
-
-@-webkit-keyframes audioMove {
-    from {
-        -webkit-transform: rotate(0deg);
-        transform: rotate(0deg);
+@-webkit-keyframes change {
+    0%{
+        -webkit-transform:rotate(0deg);
+        transform:rotate(0deg);
     }
-    to {
-        -webkit-transform: rotate(360deg);
-        transform: rotate(360deg);
+    50%{
+        -webkit-transform:rotate(180deg);
+        transform:rotate(180deg);
     }
-}
-
-@keyframes audioMove {
-    from {
-        -webkit-transform: rotate(0deg);
-        transform: rotate(0deg);
-    }
-    to {
-        -webkit-transform: rotate(360deg);
-        transform: rotate(360deg);
+    100%{
+        -webkit-transform:rotate(360deg);
+        transform:rotate(360deg);
     }
 }
-
+@keyframes change {
+    0%{
+        -webkit-transform:rotate(0deg);
+        transform:rotate(0deg);
+    }
+    50%{
+        -webkit-transform:rotate(180deg);
+        transform:rotate(180deg);
+    }
+    100%{
+        -webkit-transform:rotate(360deg);
+        transform:rotate(360deg);
+    }
+}
 /*--AUDIO end--*/
 
 /*--ARROW start--*/
