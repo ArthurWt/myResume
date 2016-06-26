@@ -28,6 +28,13 @@
     var audioBtn=document.querySelector("#audio-btn");
     var media=document.querySelector("#media");
 
+    window.setTimeout(function () {
+        media.play();
+        //myAudio.addEventListener("canplay", function () {
+        //    audioBox.style.display = "block";
+        //    audioBox.className += " audioMove";
+        //}, false);
+    }, 1000);
     audioBtn.onclick = function(){
         if (media.paused) {
             media.play();
@@ -72,11 +79,6 @@
                     step = 1;
                 }
         }
-
-
-
-
-
     });
 
 
