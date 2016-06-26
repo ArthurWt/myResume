@@ -115,7 +115,7 @@ img {
     left: 50%;
     bottom: .2rem;
     z-index: 100;
-    margin-left: -.24rem;
+    margin-left: -.12rem;
     width: .24rem;
     height: .18rem;
     background: url("image/web-swipe-tip.png") no-repeat;
@@ -682,14 +682,17 @@ img {
     margin-left: -.575rem;
     width: 1.15rem;
     height: 1.15rem;
+
     border-radius: 50%;
     background-color: rgb(244, 247, 54);
     border: .05rem solid lightgoldenrodyellow;
     z-index: 200;
+    animation: fadeIn 2s ease 1.5s 1 both;
 }
 
 #page3 .box div:nth-child(5) span:nth-child(1) {
     position: relative;
+    color:#000;
     top: -0.4rem;
     padding: 0 .1rem;
     font-size: .2rem;
@@ -697,6 +700,7 @@ img {
 
 #page3 .box div:nth-child(5) span:nth-child(2) {
     position: relative;
+    color:#000;
     top: -0.4rem;
     padding: 0 .1rem;
 }
@@ -724,7 +728,7 @@ img {
 #page4 .page4 div:nth-child(1) span, .page4 div:nth-child(3) span {
     margin-left: .15rem;
     line-height: .4rem;
-    color: #ffffff;
+    color: #000;
 }
 
 #page4 .page4 div:nth-child(2) span, .page4 div:nth-child(4) span {
@@ -836,14 +840,14 @@ img {
 @keyframes bounceInDown5 {
     from {
         opacity: 0;
-        -webkit-transform: translate3d(0, -300px, 0);
-        transform: translate3d(0, -300px, 0);
+        -webkit-transform: translate(0, -300px);
+        transform: translate(0, -300px);
     }
 
     to {
         opacity: 1;
-        -webkit-transform: translate3d(0, 0, 0);
-        transform: translate3d(0, 0, 0);
+        -webkit-transform: translate(0, 0);
+        transform: translate(0, 0);
     }
 
 }
@@ -851,28 +855,28 @@ img {
 @-webkit-keyframes bounceInUp5 {
     from {
         opacity: 0;
-        -webkit-transform: translate3d(0, 300px, 0);
-        transform: translate3d(0, 300px, 0);
+        -webkit-transform: translate(0, 300px);
+        transform: translate(0, 300px);
     }
 
     to {
         opacity: 1;
-        -webkit-transform: translate3d(0, 0, 0);
-        transform: translate3d(0, 0, 0);
+        -webkit-transform: translate(0, 0);
+        transform: translate(0, 0);
     }
 }
 
 @keyframes bounceFade {
     from {
         opacity: 1;
-        -webkit-transform: translate3d(0, 0, 0);
-        transform: translate3d(0, 0, 0);
+        -webkit-transform: translate(0, 0);
+        transform: translate(0, 0);
     }
 
     to {
         opacity: 0;
-        -webkit-transform: translate3d(100px, 0, 0);
-        transform: translate3d(100px, 0, 0);
+        -webkit-transform: translate(100px, 0);
+        transform: translate(100px, 0);
     }
 
 }
