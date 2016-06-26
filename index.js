@@ -28,13 +28,15 @@
     var audioBtn=document.querySelector("#audio-btn");
     var media=document.querySelector("#media");
 
-    window.setTimeout(function () {
+    //window.setTimeout(function () {
+    //    media.play();
+    //    media.addEventListener("canplay", function () {
+    //        media.play();
+    //    }, false);
+    //}, 1000);
+    window.onload= function () {
         media.play();
-        //myAudio.addEventListener("canplay", function () {
-        //    audioBox.style.display = "block";
-        //    audioBox.className += " audioMove";
-        //}, false);
-    }, 1000);
+    };
     audioBtn.onclick = function(){
         if (media.paused) {
             media.play();
@@ -45,6 +47,9 @@
             audioBtn.id="";
         }
     };
+    //document.addEventListener('touchstart', function(){
+    //    media.play();
+    //}, false);
 }();
 //->给滑屏区域进行初始化设置
 +function () {
