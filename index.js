@@ -102,32 +102,30 @@
             if (step === 5 || step === 0) {
                 setTimeout(
                     function () {
-                        $("#page5>ul>li:nth-child(1)").addClass(" bar1");
-                        $("#page5>ul>li:nth-child(6)").addClass(" bar1");
-                        $("#page5>ul>li:nth-child(2)").addClass(" bar2");
-                        $("#page5>ul>li:nth-child(7)").addClass(" bar2");
-                        $("#page5>ul>li:nth-child(3)").addClass(" bar3");
-                        $("#page5>ul>li:nth-child(8)").addClass(" bar3");
-                        $("#page5>ul>li:nth-child(4)").addClass(" bar4");
-                        $("#page5>ul>li:nth-child(9)").addClass(" bar4");
-                        $("#page5>ul>li:nth-child(5)").addClass(" bar5");
-                        $("#page5>ul>li:nth-child(10)").addClass(" bar5");
+                        $("#page5 .flashingBar1").addClass(" bar1");
+                        $("#page5 .flashingBar6").addClass(" bar1");
+                        $("#page5 .flashingBar2").addClass(" bar2");
+                        $("#page5 .flashingBar7").addClass(" bar2");
+                        $("#page5 .flashingBar3").addClass(" bar3");
+                        $("#page5 .flashingBar8").addClass(" bar3");
+                        $("#page5 .flashingBar4").addClass(" bar4");
+                        $("#page5 .flashingBar9").addClass(" bar4");
+                        $("#page5 .flashingBar5").addClass(" bar5");
+                        $("#page5 .flashingBar10").addClass(" bar5");
                     }, 2000
                 )
             } else {
-                $(".verticalBar1>li:nth-child(1)").removeClass("bar1");
-                $(".verticalBar1>li:nth-child(6)").removeClass("bar1");
-                $(".verticalBar1>li:nth-child(2)").removeClass("bar2");
-                $(".verticalBar1>li:nth-child(7)").removeClass("bar2");
-                $(".verticalBar1>li:nth-child(3)").removeClass("bar3");
-                $(".verticalBar1>li:nth-child(8)").removeClass("bar3");
-                $(".verticalBar1>li:nth-child(4)").removeClass("bar4");
-                $(".verticalBar1>li:nth-child(9)").removeClass("bar4");
-                $(".verticalBar1>li:nth-child(5)").removeClass("bar5");
-                $(".verticalBar1>li:nth-child(10)").removeClass("bar5");
+                $("#page1 .flashingBar1").removeClass("bar1");
+                $("#page1 .flashingBar6").removeClass("bar1");
+                $("#page1 .flashingBar2").removeClass("bar2");
+                $("#page1 .flashingBar7").removeClass("bar2");
+                $("#page1 .flashingBar3").removeClass("bar3");
+                $("#page1 .flashingBar8").removeClass("bar3");
+                $("#page1 .flashingBar4").removeClass("bar4");
+                $("#page1 .flashingBar9").removeClass("bar4");
+                $("#page1 .flashingBar5").removeClass("bar5");
+                $("#page1 .flashingBar10").removeClass("bar5");
             }
-
-
         });
     }
 }();
