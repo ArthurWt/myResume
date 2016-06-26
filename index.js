@@ -34,7 +34,7 @@
     //        media.play();
     //    }, false);
     //}, 1000);
-    
+
     audioBtn.onclick = function(){
         if (media.paused) {
             media.play();
